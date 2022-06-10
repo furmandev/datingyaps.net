@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="dangPacks.gif" as="image" />
+    <title>datingyaps</title>
+    <style>
+      :root {
+        --mdc-theme-primary: #bb86fc;
+        --mdc-theme-secondary: #03dac6;
+        --mdc-theme-secondary-bg: #03dac6;
+        --mdc-theme-primary-bg: #fff;
+        --mdc-theme-on-primary: #fff;
+        --mdc-theme-on-secondary: #000;
+        --mdc-theme-surface: #fff;
+        --mdc-theme-on-surface: #000;
+        --mdc-theme-background: #fff;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --mdc-theme-primary-bg: #121212;
+          --mdc-theme-on-primary: #000000;
+          --mdc-theme-on-secondary: #000000;
+          --mdc-theme-surface: #121212;
+          --mdc-theme-on-surface: #ffffff;
+          --mdc-theme-background: #121212;
+        }
+      }
+
+      * {
+        font-family: Roboto, sans-serif;
+      }
+      html {
+        background-color: var(--mdc-theme-background);
+      }
+      p {
+        color: var(--mdc-theme-on-surface);
+      }
+      footer {
+        background-color: var(--mdc-theme-primary);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        padding: 1rem;
+      }
+      body {
+        margin: 0;
+        padding: 1rem;
+      }
+      .links {
+        width: 100%;
+        margin-top: 5em;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .links a {
+        width: max-content;
+        height: max-content;
+      }
+      .links img {
+        width: 30vw;
+        object-fit: contain;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: calc(100vh - (1rem * 2));
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>
+        I don't know the context but this is from Quote 395 (!quote 395 in
+        chat).
+      </p>
+      <div class="links">
+        <a href="https://dangpacks.com">
+          <img src="dangPacks.gif" alt="dangpacks" />
+        </a>
+        <a href="https://twitch.tv/dangheesling">
+          <img src="twitch.svg" alt="dangheesling show on twitch" />
+        </a>
+      </div>
+    </main>
+  </body>
+  <footer>made by <a href="https://furman.dev">furman.dev</a></footer>
+</html>
